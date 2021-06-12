@@ -3,7 +3,6 @@ html {
 }
 
 body {
-    color: #555;
     font-family: 'Open Sans Condensed';
 }
 
@@ -66,6 +65,21 @@ body {
     border: 1px solid black !important;
 }
 
+.bg-black {
+    background: #000 !important;
+}
+
+/* -------------------------------- Nav Bar */ 
+
+#all-products-link {
+    color: black;
+    word-spacing: 2px;
+}
+
+#all-products-link:hover {
+    color: #555;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -83,10 +97,6 @@ body {
         right: 0;
         left: 0;
         z-index: 1030;
-    }
-
-    .header-container {
-        padding-top: 164px;
     }
 }
 
