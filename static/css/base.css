@@ -69,6 +69,14 @@ body {
     background: #000 !important;
 }
 
+.text-padding {
+    padding-top: 20px;
+}
+
+.about-mlen p {
+    padding-top: 20px;
+}
+
 /* -------------------------------- Nav Bar */ 
 
 #all-products-link {
