@@ -140,6 +140,19 @@ body {
     color: #FFC0CB;
 }
 
+/* ----------------------------------------- Product Info Page */
+.btn-outline-black {
+    background: white;
+    color: black !important; /* use important to override link colors for <a> elements */
+    border: 1px solid black;
+}
+
+.btn-outline-black span:hover,
+.btn-outline-black:hover {
+    background: #FFC0CB;
+    color: white;
+}
+
 /* -------------------------------- Nav Bar */ 
 
 #all-products-link {
@@ -156,12 +169,8 @@ body {
 }
 
 /* -------------------------------- Bag */
-.browse-hover:hover {
-    color: #FFC0CB;
-}
-
-.browse-hover {
-    letter-spacing: 5px;
+.browse-text {
+    letter-spacing: 3px;
 }
 
 /* -------------------------------- Media Queries */

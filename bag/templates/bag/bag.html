@@ -26,9 +26,10 @@
                 {% else %}
                     <p class="lead mb-5">Your cart is empty. <i class="far fa-frown"></i></p>
                     <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
-                        <p class="icon text-uppercase browse-hover">
-                            <i class="fas fa-chevron-left"> </i>Eyelashes
-                        </p>
+                        <span class="icon text-uppercase">
+                            <i class="fas fa-chevron-left"></i>
+                        </span>
+                        <span class="text-uppercase browse-text">Browse Eyelashes</span>
                     </a>
                 {% endif %}
             </div>
