@@ -31,9 +31,7 @@
                     </div>
                     <div class="col-12 col-md-6 order-md-first">
                         <p class="text-muted mt-3 text-center text-md-first">
-                            {% if search_term or current_sorting != 'None_None' %}
-                                <span class="small all-eyelashes"><a href="{% url 'products' %}">All Eyelashes</a> | </span>
-                            {% endif %}
+                            <span class="all-eyelashes"><a href="{% url 'products' %}">All Eyelashes</a> | </span>
                             {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
                         </p>
                     </div>
@@ -42,8 +40,8 @@
                     {% for product in products %}
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="card h-100 border-0">
-                                <a href="{% url 'product_detail' product.id %}">
-                                    <img src="{{ product.image.url }}" alt="{{ product.name }}" class="card-img-top img-fluid">
+                                <a class="card-hover" href="{% url 'product_detail' product.id %}">
+                                    <img src="{{ product.image.url }}" alt="{{ product.name }}" class="card-img-top image img-fluid">
                                 </a>
                                 <div class="card-body pb-0">
                                     <p class="mb-0 text-center">{{ product.name }}</p>
