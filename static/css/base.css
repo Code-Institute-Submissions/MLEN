@@ -89,6 +89,11 @@ body {
     letter-spacing: 1px;
     word-spacing: 2px;
 }
+
+.threshold {
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
   
 .carousel-item img {
     margin: auto;
