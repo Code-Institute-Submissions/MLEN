@@ -124,10 +124,6 @@ body {
     color: #FFC0CB;
 }
 
-#sort-selector:hover {
-    color: #FFC0CB;
-}
-
 .card-hover:hover .image {
     opacity: 0.3;
 }
