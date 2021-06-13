@@ -69,12 +69,32 @@ body {
     background: #000 !important;
 }
 
-.text-padding {
+/* ----------------------------------------- Homepage */
+.homepage-text {
     padding-top: 20px;
 }
 
-.about-mlen p {
-    padding-top: 20px;
+.homepage-paragraph p {
+    font-size: large;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+  
+.carousel-item img {
+    margin: auto;
+  }
+
+.carousel-control-prev i, .carousel-control-next i {
+    color: #000;
+    font-size: 30px;
+}
+
+.carousel-control-prev {
+    left: 10%;
+}
+
+.carousel-control-next {
+    right: 10%;
 }
 
 /* -------------------------------- Nav Bar */ 
