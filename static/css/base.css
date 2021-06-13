@@ -70,6 +70,16 @@ body {
 }
 
 /* ----------------------------------------- Homepage */
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus,
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background: #FFC0CB;
+    color: black;
+}
+
 .homepage-text {
     padding-top: 20px;
 }
@@ -85,8 +95,12 @@ body {
   }
 
 .carousel-control-prev i, .carousel-control-next i {
-    color: #000;
+    color: black;
     font-size: 30px;
+}
+
+.carousel-control-prev i:hover, .carousel-control-next i:hover {
+    color: #FFC0CB;
 }
 
 .carousel-control-prev {
@@ -97,6 +111,23 @@ body {
     right: 10%;
 }
 
+/* ----------------------------------------- Product */
+
+.all-eyelashes a {
+    font-size: large;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: black;
+}
+
+.all-eyelashes a:hover {
+    color: #FFC0CB;
+}
+
+#sort-selector:hover {
+    color: #FFC0CB;
+}
+
 /* -------------------------------- Nav Bar */ 
 
 #all-products-link {
@@ -105,7 +136,7 @@ body {
 }
 
 #all-products-link:hover {
-    color: #555;
+    color: #FFC0CB;
 }
 
 /* -------------------------------- Media Queries */
