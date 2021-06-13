@@ -47,16 +47,6 @@ body {
     color: white;
 }
 
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
-    background: #222;
-    color: white;
-}
-
 .text-black {
     color: #000 !important;
 }
@@ -163,6 +153,15 @@ body {
 
 .mobile-show {
     display: none;
+}
+
+/* -------------------------------- Bag */
+.browse-hover:hover {
+    color: #FFC0CB;
+}
+
+.browse-hover {
+    letter-spacing: 5px;
 }
 
 /* -------------------------------- Media Queries */
