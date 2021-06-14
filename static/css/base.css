@@ -59,6 +59,14 @@ body {
     background: #000 !important;
 }
 
+.nav-hover:hover {
+    color: #FFC0CB;
+}
+
+.nav-hover {
+    color: black;
+}
+
 /* ----------------------------------------- Homepage */
 .shop-now-button:hover,
 .shop-now-button:active,
