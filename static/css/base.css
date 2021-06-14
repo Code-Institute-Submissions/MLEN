@@ -172,6 +172,20 @@ body {
     letter-spacing: 3px;
 }
 
+.cart-name {
+    color: black;
+    letter-spacing: 1px;
+}
+
+.cart-name:hover {
+    color: #FFC0CB;
+    text-decoration: none;
+}
+
+.cart-img:hover .image {
+    opacity: 0.5;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
