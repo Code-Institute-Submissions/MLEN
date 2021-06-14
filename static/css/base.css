@@ -140,6 +140,16 @@ body {
     color: #FFC0CB;
 }
 
+.product-name {
+    color: black;
+    letter-spacing: 1px;
+}
+
+.product-name:hover {
+    color: #FFC0CB;
+    text-decoration: none;
+}
+
 /* ----------------------------------------- Product Info Page */
 .btn-outline-black {
     background: white;

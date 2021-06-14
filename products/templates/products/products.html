@@ -43,8 +43,8 @@
                                 <a class="card-hover" href="{% url 'product_detail' product.id %}">
                                     <img src="{{ product.image.url }}" alt="{{ product.name }}" class="card-img-top image img-fluid">
                                 </a>
-                                <div class="card-body pb-0">
-                                    <p class="mb-0 text-center">{{ product.name }}</p>
+                                <div class="card-body pb-0 text-center">
+                                    <a href="{% url 'product_detail' product.id %}" class="mb-0 product-name">{{ product.name }}</a>
                                 </div>
                                 <div class="card-footer bg-white pt-0 border-0 text-center">
                                     <div class="row">
