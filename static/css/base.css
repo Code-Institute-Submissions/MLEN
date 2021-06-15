@@ -297,6 +297,13 @@ input[type="number"] {
     cursor: pointer;
 }
 
+/* -------------------------------- Shopping Cart Payment */
+.payment-text,
+.payment-product-text {
+    font-size: large;
+    letter-spacing: 1px;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
