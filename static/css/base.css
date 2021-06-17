@@ -304,6 +304,13 @@ input[type="number"] {
     letter-spacing: 1px;
 }
 
+.payment-sign {
+    color: #FFC0CB !important;
+}
+
+.payment-sign:hover {
+    text-decoration: none;
+}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
