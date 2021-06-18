@@ -279,6 +279,10 @@ input[type="number"] {
     letter-spacing: 3px;
 }
 
+.fa-shopping-cart {
+    color: #FFC0CB;
+}
+
 .cart-name {
     color: black;
     letter-spacing: 1px;
@@ -325,7 +329,7 @@ input[name='q']::placeholder {
   }
 }
 
-/* Allauth form formatting */
+/* -------------------------------- Allauth form formatting */
 
 .allauth-form-inner-content p {
     margin-top: 1.5rem; /* mt-4 */
