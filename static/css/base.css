@@ -4,6 +4,7 @@ html {
 
 body {
     font-family: 'Open Sans Condensed';
+    min-height: 100%;
 }
 
 .header-img {
@@ -189,6 +190,13 @@ body {
     right: 10%;
 }
 
+/* ----------------------------------------- Tutorial */
+.tutorial-text {
+    font-size: large;
+    letter-spacing: 0.5px;
+    word-spacing: 2px;
+}
+
 /* ----------------------------------------- Product */
 
 .all-eyelashes a {
@@ -234,7 +242,7 @@ body {
     text-decoration: none;
 }
 
-/* ----------------------------------------- Product Info Page */
+/* ----------------------------------------- Product Info */
 .btn-outline-black {
     background: white;
     color: black !important; /* use important to override link colors for <a> elements */
@@ -436,6 +444,30 @@ input[name='q']::placeholder {
 	color: #17a2b8; /* text-info */
 }
 
+/*---------------------------------------------------------------------Footer*/
+.socialmedia li a {
+    font-size: 22px;
+    color: black;
+}
+
+.socialmedia li a i {
+    margin-right: 5px;
+    margin-left: 30px;
+}
+
+.socialmedia li a em {
+    color: black;
+    font-weight: 500;
+    font-size: large;
+}
+
+.socialmedia li a:hover,
+.socialmedia li em:hover {
+    text-decoration: none;
+    color: #FFC0CB;
+}
+
+/*----------------------------------------------------------------- Mobile Css */
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
