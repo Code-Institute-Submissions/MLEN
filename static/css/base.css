@@ -200,6 +200,7 @@ body {
 
 .all-eyelashes a:hover {
     color: #FFC0CB;
+    text-decoration: none;
 }
 
 .card-hover:hover .image {

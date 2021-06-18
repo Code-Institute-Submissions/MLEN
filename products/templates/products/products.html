@@ -13,7 +13,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12 text-center homepage-text">
-                <h2>Eyelashes</h2>
+                <h2><i class="fas fa-eye"></i>lashes</h2>
                 <hr class="w-50 mb-1">
             </div>
         </div>
@@ -31,7 +31,7 @@
                     </div>
                     <div class="col-12 col-md-6 order-md-first">
                         <p class="text-muted mt-3 text-center text-md-first">
-                            <span class="all-eyelashes"><a href="{% url 'products' %}">All Eyelashes</a> | </span>
+                            <span class="all-eyelashes"><a href="{% url 'products' %}">All <i class="fas fa-eye"></i>lashes</a> | </span>
                             {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
                         </p>
                     </div>
