@@ -1,0 +1,20 @@
+Hello {{ order.full_name }}!
+
+This is a confirmation of your order at MLEN. Your order information is below:
+
+Order Number: {{ order.order_number }}
+Order Date: {{ order.date }}
+Phone Number: {{ order.phone_number }}
+Address: {{ order.street_address1 }} in {{ order.town_or_city }}, {{ order.country }}
+
+Order Total: ${{ order.order_total }}
+Delivery: ${{ order.delivery_cost }}
+Grand Total: ${{ order.grand_total }}
+
+If you have any questions, feel free to contact us at {{ contact_email }}.
+
+Thanks for choosing us!
+
+Sincerely,
+
+MLEN
