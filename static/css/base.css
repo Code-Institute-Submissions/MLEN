@@ -443,8 +443,13 @@ input[name='q']::placeholder {
 .allauth-form-inner-content a {
 	color: #17a2b8; /* text-info */
 }
+/*--------------------------------------------------------------------- Contact Us*/
+.fa-file-signature {
+    color: #FFC0CB;
+}
 
-/*---------------------------------------------------------------------Footer*/
+
+/*--------------------------------------------------------------------- Footer*/
 .socialmedia li a {
     font-size: 22px;
     color: black;
