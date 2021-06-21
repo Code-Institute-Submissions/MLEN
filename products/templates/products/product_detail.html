@@ -99,7 +99,7 @@
                 {% if request.user.is_authenticated %}
                     <form class="reviews-form" method="POST">
                         {% csrf_token %}
-                        <div class="mb-3 mt-5 form-group">
+                        <div class="mb-3 form-group">
                             <label for="content" class="form-label">Content</label>
                             <textarea class="form-control" id="content" name="content" rows="3" placeholder="Type your message here" required></textarea>
                         </div>

@@ -449,10 +449,6 @@ input[name='q']::placeholder {
 	color: #17a2b8; /* text-info */
 }
 /*--------------------------------------------------------------------- Contact Us*/
-.contact-icon i {
-    color: #FFC0CB;
-}
-
 .contactus-form {
     font-size: large;
     letter-spacing: 1px;
