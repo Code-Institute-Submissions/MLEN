@@ -448,6 +448,11 @@ input[name='q']::placeholder {
     color: #FFC0CB;
 }
 
+.contactus-form {
+    font-size: large;
+    letter-spacing: 1px;
+}
+
 
 /*--------------------------------------------------------------------- Footer*/
 .socialmedia li a {
