@@ -21,7 +21,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY', '4i5mxtmvk0frf6o4_a0(*%za(@97=h&l(sp@snwzz8zu!ik=+w')
+SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
@@ -118,7 +118,7 @@ WSGI_APPLICATION = 'mlen.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-
+"""
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
@@ -130,6 +130,11 @@ else:
             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         }
     }
+"""
+
+DATABASES = {
+    'default': dj_database_url.parse('postgres://cywjrkjqfwdtxu:dce3e4229a85123c62d937148899e42c09bb73e74195a1a4b55ccda9015db5df@ec2-54-217-195-234.eu-west-1.compute.amazonaws.com:5432/dd9etfqj6bdcuq')
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
