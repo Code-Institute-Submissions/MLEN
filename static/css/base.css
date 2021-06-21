@@ -299,6 +299,11 @@ input[type="number"] {
     border-radius: 0;
 }
 
+.reviews-form {
+    font-size: large;
+    letter-spacing: 1px;
+}
+
 /* -------------------------------- Nav Bar */ 
 #all-products-link {
     color: black;
@@ -444,7 +449,7 @@ input[name='q']::placeholder {
 	color: #17a2b8; /* text-info */
 }
 /*--------------------------------------------------------------------- Contact Us*/
-.fa-file-signature {
+.contact-icon i {
     color: #FFC0CB;
 }
 
@@ -452,7 +457,6 @@ input[name='q']::placeholder {
     font-size: large;
     letter-spacing: 1px;
 }
-
 
 /*--------------------------------------------------------------------- Footer*/
 .socialmedia li a {

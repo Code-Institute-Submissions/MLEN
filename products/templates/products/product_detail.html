@@ -79,6 +79,38 @@
             </div>
         </div>
     </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>Reviews</h2>
+            <div class="col-sm-12">
+                {% for review in product.reviews.all %}
+                    <div class="">
+                        <p><strong>{{ review.date_added|date:"Y-m-d" }}</strong></p>
+                        {{ review.content }}
+                    </div>
+                {% empty %}
+                    <div class="">
+                        No reviews yet ...
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="col-sm-12">
+                {% if request.user.is_authenticated %}
+                    <form class="reviews-form" method="POST">
+                        {% csrf_token %}
+                        <div class="mb-3 mt-5 form-group">
+                            <label for="content" class="form-label">Content</label>
+                            <textarea class="form-control" id="content" name="content" rows="3" placeholder="Type your message here" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-black rounded-0" id="submit-button">Submit</button>
+                    </form>
+                {% else %}
+                    <p>Please <a href="{% url 'account_signup' %}" class="signup-link">sign up</a> or <a href="{% url 'account_login' %}" class="signup-link">sign in</a> to add review!</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
 {% endblock %}
 
 {% block postloadjs %}
