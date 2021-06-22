@@ -20,6 +20,32 @@ The main colours used are Black and Canva to keep the site clean and balance wit
 ***Wireframe***
 [Desktop (Tablet is the same as desktop ver) and Mobile Wireframe.](./static/readme/mlen.pdf).
 
+## UX
+
+***User Stories***
+
+- As a **user**, I want to be able to register for an account.
+- As a **user**, I want to be able to log on and off the site after I have registered.
+- As a **user**, I want to be able to recover my password if I no longer remember it.
+- As a **user**, I want to receive confirmation emails throughout the registration process.
+- As a **user**, I want to have a interactive personalized user profile.
+- As a **user**, I want to be able to view all the products.
+- As a **user**, I want to be able to view products by Sorting a specific category of product.
+- As a **user**, I want to be able to search products by name.
+- As a **user**, I want to be able to see more detailed product information.
+- As a **user**, I want to be able to easily view the total of my purchases anytime.
+- As a **user**, I want to be able to add products to my cart easily.
+- As a **user**, I want to be able to Add a review for a specific product.
+- As a **user**, I want to be able to view the items in my cart.
+- As a **user**, I want to be able to adjust the quantity of items in my cart.
+- As a **user**, I want to be able to easily enter my payment details.
+- As a **user**, I want to be able to view an order confirmation after checkout.
+- As a **user**, I want to be able to receive an email confirmation after checking out.
+- As a **user**, I want to be able to send an email to the site.
+- As a **site owner**, I want to be able to Add a product to the site.
+- As a **site owner**, I want to be able to Edit a product to the site.
+- As a **site owner**, I want to be able to Delete a product from the site.
+
 ## Features and Functionality
 
 ***Elements Across the website***
