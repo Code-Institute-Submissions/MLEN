@@ -107,3 +107,70 @@ The order confirmation page lists out the order number and the detail of the pur
 1. [SQLlite (In development)](https://www.sqlite.org/index.html)
 2. [Postgres (At deployment)](https://www.postgresql.org/)
 
+## Deployment
+
+***Deploying to Heroku***
+
+Heroku is connected to github repository and using automatic deployment from GitPod.
+To deploy our application on Heroku, it is essential to have a requirements.txt file and a Procfile. The two files will inform Heroku what dependencies are required to run the application, which file to run and ultimately, launch the application.
+
+1. Create a requirements.txt file by typing in the terminal: `pip3 freeze --local > requirements.txt`.
+2. Create a Procfile by typing in the terminal `ech web: python app.py > Procfile`
+3. Create an account on [Heroku](heroku.com) and then log in.
+4. Select `New` and then `Create New App`.
+5. Choose a name for the app and a region.
+6. Select `Create app`
+7. In the Deployment method section, select the GitHub option. 
+8. In the connect to GitHub section, make sure the GitHub profile is displayed.
+9. Select the repository in the list of the project and then click `connect to this app`.
+10. Go to settings and in the Config Vars section, click `Reveal Config Vars`.
+11. Input all the config variables.
+12. Return to the Deploy tab.
+13. Check the `Enable Automatic Deploys`
+14. Select the `master` branch to deploy.
+15. Click the `Deploy Branch` button. 
+16. Scroll to the top and click `Open app` to view the deployed website.
+
+***AWS***
+
+The static folder contents and the media folders of the project are deployed in AWS.
+
+1. Go to [AWS](aws.amazon.com) and either log in or create an account.
+2. Search for S3.
+3. Create a new bucket and ensure that the `Block All Public Access` tickbox is unchecked and click 'Create Bucket`.
+4. Click on the Properties tab and enable `Static Website Hosting`. This will allow AWS to host our static files.
+5. Input `index.html` and `error.html` in the appropriate fields and hit save.
+6. Click on the Properties tab and click CORS configuration to add Code.
+7. Click the Policy Tab and select Policy Generator which creates a security policy for the bucket.
+8. The policy type is S3 Bucket Policy and the Action will be `get object`.
+9. Copy the ARN (Amazon Resource Name) from the bucket and paste it in the ARN field.
+10. Click `Add Statement` and then `Generate Policy`.
+11. Copy the generated policy in to the Bucket Policy Editor.
+12. Add `/*` at the end of the resource key as this will allow access to all resources in the bucket and click Save.
+13. Click the Access Control tab and set the list object permission to everyone under the Public Access section.
+14. Open IAM from the service menu.
+15. Create a group for your user to belong to.
+16. Create an access policy for you the group which gives access to the S3 bucket.
+17. Click the JSON tab and select import managed policy, search for S3 and select S3 Full Access Policy.
+18. Create a user, give them programmatic access and attach it to the group.
+19. Download the CSV file that is generated as this contains the keys required to use AWS.
+20. Install boto3 and django-storages using `pip3 install`.
+21. Add the keys to the Config Vars in Django.
+22. Create a custom_storage file.
+23. Run `python manage.py collectstatic` and transfers the static info to AWS.
+
+## Tutorials and Credits
+
+***Code***
+
+1. [Code Institute](https://codeinstitute.net/) main structure and model was taken from the Boutique Ado mini project.
+2. [Product reviews](https://www.youtube.com/watch?v=Y5vvGQyHtpM) tutorial.
+3. [Contact Form](https://www.youtube.com/watch?v=lSgRWA4PMt4&t=603s) tutorial.
+
+***Content and Media***
+1. [MLEN](https://www.mlen.asia/) for the picture and details.
+2. [favicon](https://favicon.io/emoji-favicons/eye/) 
+
+## Acknowledgements
+
+Thank You Code Institute for the teaching program and Slacks community for always there to help.
