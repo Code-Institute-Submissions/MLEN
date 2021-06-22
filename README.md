@@ -107,7 +107,7 @@ The order confirmation page lists out the order number and the detail of the pur
 
 ## Testing
 
-Testing result can be found [here]("").
+Testing result can be found [here](https://github.com/Tanyapond/MLEN/blob/master/readme/testing.md).
 
 ## Technologies Used
 
