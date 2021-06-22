@@ -1,59 +1,76 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+![]("")
+# [MLEN](https://tanya-mlen.herokuapp.com/) 
 
-Welcome Tanyapond,
+This is the 4th Milestone project undertaken as part of Code Institute and has been build in the Full Stack Framework using Django.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+MLEN is an online store for anyone who have interest in magnetic eyelashes.
+MLEN eyelashes can be reuseable, wear and remove in seconds! Natural soft magnetic eyelashes with various designs for you to complete your beauty. It is currently the most advanced magnetic eyelash.
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Design
 
-`python3 -m http.server`
+### Color Theme
 
-A blue button should appear to click: _Make Public_,
+The main colours used are Black and Canva to keep the site clean and balance with white background and brighter tones.
 
-Another blue button should appear to click: _Open Browser_.
+### Font
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+'Open Sans Condensed' for all the fonts in the site.
 
-A blue button should appear to click: _Make Public_,
+### Wireframe
+[Desktop (Tablet is the same as desktop ver) and Mobile Wireframe.](./static/readme/mlen.pdf).
 
-Another blue button should appear to click: _Open Browser_.
+## Features and Functionality
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+***Elements Across the website***
 
-To log into the Heroku toolbelt CLI:
+Nav bar is fixed at the top for easier navigation and footer is fixed at the bottom
+for social media. On smaller device, the nav bar will be compressed into a side slide
+menu which can be open by clicking on the down arrow button.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+***Home Page Elements***
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidently make it public then you can create a new one with _Regenerate API Key_.
+A hero Image on top in-tune with the theme of the project with a button which takes the user to the products page and a writeup about the brand.
 
-## Updates Since The Instructional Video
+***Tutorial Elements***
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+A static page to explain how to apply and clean the eyelashes.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+***Contact Us Page Elements***
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+This page displayes a form for both the user and non-user to send an email. By submitting the form, the email will be sends to the DB.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+***Login Page Elements***
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+Registered user can input their username and password info to log in to the site. 
+If the user is valid, a toast message is displayed and the user is redirected to the Homepage. If either one of the info is incorrect, an error message will appear to inform the user. The user can register or to reset their password.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+***Registration Page Elements***
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+Non-user will have to input a valid username, email address and password on the form.
+Submit button sends into the DB and show the user a verification page to confirm the sign up.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+***Profile Page Elements***
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+User can check or update their address information and check their previous order here.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+***Products(Eyelashes) Page Elements***
 
----
+Display products using Bootstrap cards along with the associated image of the products.
+By clicking the picture or product's name the user will be redirect to the product detail page which the user can get into a more detailed understanding of the product. 
+On Clicking the "sort by .." dropdown button, the user will be able to display all the products for that category. At the bottom right of the screen is a Back to Top button.
+If the user is a SuperUser, Edit/Delete button will be displayed to allow easy Workshop Management.
 
-Happy coding!
+***Products Detail Page Elements***
+
+In the detail page, to the left, the associated image of the product is displayed.
+To the right the title, description, lash information and price along with quantity selector is displayed. Plus/Minus icons are placed either side of Number Input Field to increase and decrease quantity. Two buttons - add to cart and browse more lashes - are below the quantity input field. Browse more lashes returns the user to the All product page and add to cart adds items to the cart which displays a Toast success which will show the items of the bag and the total amount purchased.
+
+***Shopping cart page elements***
+
+This page display the user added items in cart and selects to do checkout.
+The user will be able to adjust the quantity of the items in the basket using the plus/minus icons and clicking the update link or remove the whole line by clicking the remove link. The grand total along with the delivery charge is computed and displayed for a particular order. "Secure Checkout" button at the bottom allow the user to proceed with paying and takes them to the checkout page and "Browse more lashes" button return them to the all products page.
+
+***Checkout Page Elements***
+
+After the user finalizes their purchase, they can move ahead to do a checkout and make the payment of the purchase. This page is divided into two parts, on the right shows the order summary, on the left shows a form requesting for information about the user. The user must fill in the form on the left before being able to continue the checkout process. There are required fields in the form and this information will be saved to the DB and can be check in the user profile page if the user has logged in or creates an account prior to checkout. The credit card field is linked to STRIPE and the form inherits the stripe validations associated with credit cards. Buttons at the bottom allow the user to go back to the shopping cart and make adjustments to the quantity purchased or move ahead to pay and complete the order. Once the user submits the payment information a pink loading screen will appears to show that the payment is being processed.
