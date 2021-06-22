@@ -1,4 +1,4 @@
-![](./readme/mlen.png)
+![](./readme/image/mlen.png)
 # [MLEN](https://tanya-mlen.herokuapp.com/) 
 
 This is the 4th Milestone project undertaken as part of Code Institute and has been build in the Full Stack Framework using Django.
@@ -107,7 +107,7 @@ The order confirmation page lists out the order number and the detail of the pur
 
 ## Testing
 
-Testing result can be found [here](https://github.com/Tanyapond/MLEN/blob/master/readme/testing.md).
+Testing result can be found [here](https://github.com/Tanyapond/MLEN/blob/master/readme/TESTING.md).
 
 ## Technologies Used
 
