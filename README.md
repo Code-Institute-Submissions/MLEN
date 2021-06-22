@@ -1,4 +1,4 @@
-![]("")
+![](./readme/mlen.png)
 # [MLEN](https://tanya-mlen.herokuapp.com/) 
 
 This is the 4th Milestone project undertaken as part of Code Institute and has been build in the Full Stack Framework using Django.
@@ -18,7 +18,7 @@ The main colours used are Black and Canva to keep the site clean and balance wit
 'Open Sans Condensed' for all the fonts in the site.
 
 ***Wireframe***
-[Desktop (Tablet is the same as desktop ver) and Mobile Wireframe.](./static/readme/mlen.pdf).
+[Desktop (Tablet is the same as desktop ver) and Mobile Wireframe.](./readme/mlen.pdf).
 
 ## UX
 
@@ -104,6 +104,10 @@ After the user finalizes their purchase, they can move ahead to do a checkout an
 ***Checkout Success / Order Confirmation Page***
 
 The order confirmation page lists out the order number and the detail of the purchase along with the subtotal and grandtotal. User can check for their order in the profile page. The user can browse back to the products page by clicking the "Browse more lashes" button below the form.
+
+## Testing
+
+Testing result can be found [here]("").
 
 ## Technologies Used
 
@@ -195,7 +199,6 @@ The static folder contents and the media folders of the project are deployed in 
 
 ***Content and Media***
 1. [MLEN](https://www.mlen.asia/) for the picture and details.
-2. [favicon](https://favicon.io/emoji-favicons/eye/) 
 
 ## Acknowledgements
 
