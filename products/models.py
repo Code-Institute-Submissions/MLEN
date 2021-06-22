@@ -22,6 +22,3 @@ class ProductReview(models.Model):
         User, related_name='reviews', on_delete=models.CASCADE)
     content = models.TextField(blank=False)
     date_added = models.DateTimeField(auto_now_add=True)
-
-    def __str__(self):
-        return self.name
